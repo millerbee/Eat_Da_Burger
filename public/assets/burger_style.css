@@ -1,0 +1,39 @@
+
+.body{
+ background-image: url("/assets/burger2.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
+}
+li {
+    padding: 5px;
+    margin: 5px;
+    width: 75px;
+   
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+   
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+  .h1{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+      font-family:  'Amatic SC', cursive;
+      font-size: 70px;
+  }
+
+  #image{
+      margin-left: 370px;
+  }
