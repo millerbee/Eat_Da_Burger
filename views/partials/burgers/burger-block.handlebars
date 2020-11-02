@@ -1,7 +1,4 @@
-<li>
-	{{name}}
-
-	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
-		{{#if devoured}}EAT IT!{{else}}GULP!{{/if}}
-	</button>
-</li>
+<tr class="table-row">
+	<td class="table-first-col">{{id}}.  {{burger_name}}</td>
+	<td><button class="change-devour" style="width: 100px; margin-top: 10px; margin-left: 5px;" data-id="{{id}}">Devour it!</button></td>
+</tr>

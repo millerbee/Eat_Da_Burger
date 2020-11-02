@@ -1,4 +1,4 @@
-
+/* main page design */
 .body{
  background-image: url("/assets/burger2.jpg");
  background-repeat: no-repeat;
@@ -32,8 +32,28 @@ li {
       text-align: center;
       font-family:  'Amatic SC', cursive;
       font-size: 70px;
+      margin: auto;
   }
 
   #image{
       margin-left: 370px;
+  }
+
+  .eat-it{
+      margin: auto;
+  }
+  .create-form {
+    max-width: 500px;
+    margin: auto;
+    margin-left: 800px;
+    padding-top: 75px;
+    
+  }
+  
+  .table-row{
+      font-weight: bold;
+  }
+  
+  .change-devour {
+    background-color: #FFD700;
   }

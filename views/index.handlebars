@@ -4,12 +4,36 @@
     <div class ="row">
         {{!-- <img id = "image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXQok_K0uyW39Yni4mhWjYqnHzIu_777paPA&usqp=CAU" alt= "cheeseburger" style = "height:300px; border-radius: 15px; box-shadow: 0 0 10px 2px;"> --}}
     </div>
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+<section class="row">
+        <div class="col-md-7 col-left">
+            <table>
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        {{> burgers/burger-block}}
+                    {{/unless}}
+                {{/each}}
+            </table>
+        </div>
+        <div class="col-md-5 col-right">
+            {{#each burgers}}
+                {{#if devoured}}
+                    <div>{{id}}. {{burger_name}}</div>
+                {{/if}}
+            {{/each}}        
+        </div>          
+    </section>
+
+
 
 </div>
+
+    <form class="create-form">
+        <div class="form-group">
+
+            <h2>Add a Burger</h2>
+            <label for="name"></label>
+            <textarea id="name" name="burger-name" rows="2" cols="40" placeholder="Enter a Burger"></textarea>
+        </div>
+        <button type="submit" style= "background-color: #FFD700;">Submit</button>
+        </div>
+    </form>     
