@@ -1,4 +1,22 @@
-<tr class="table-row">
+<form>
+<tr class="table-row" style ="display: inline;">
 	<td class="table-first-col">{{id}}.  {{burger_name}}</td>
 	<td><button class="change-devour" style="width: 100px; margin-top: 10px; margin-left: 5px;" data-id="{{id}}">Devour it!</button></td>
 </tr>
+</form>
+
+<form>
+<tr class="table-row" style ="display: inline;">
+	<td class="table-first-col">{{id}}.  {{burger_name}}</td>
+	<td><button class="change-devour" style="width: 100px; margin-top: 10px; margin-left: 5px;" data-id="{{id}}">Devoured!</button></td>
+</tr>
+</form>
+
+
+{{!-- <li>
+	{{name}}
+
+	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+		{{#if devoured}}Devoured!{{else}}Eat it!{{/if}}
+	</button>
+</li> --}}
