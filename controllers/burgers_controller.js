@@ -20,14 +20,14 @@ router.get("/", function(req,res) {
         });
       });
 
-router.put("/api/burgers/:id", function(req, res){
+router.put("/", function(req, res){   //or is it("/", ) or api/burgers/:id
     var condition = "id = " + req.params.id;
 
     console.log("condition", condition);
 
     burger.updateOne(
         {
-            devoured: req.body.devoured
+            devoured: true
         },
         condition,
         function(result) {

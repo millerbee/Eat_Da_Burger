@@ -57,3 +57,12 @@ li {
   .change-devour {
     background-color: #FFD700;
   }
+
+  .col-left {
+	padding-left: 20%;
+}
+
+.col-right {
+	text-align: left;
+}
+
