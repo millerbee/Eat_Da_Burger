@@ -36,7 +36,7 @@ function printQuestionMarks(num) {
 
 var orm = {     
     selectAll: function(tableInput, cb) {
-      var queryString = "SELECT * FROM " + tableInput + ";";  //?? or not?
+      var queryString = "SELECT * FROM " + tableInput + ";";  //?? or not? no got error with double ?
       connection.query(queryString, function(err, result) {
         if (err) {
           throw err;
