@@ -19,18 +19,18 @@ $(function() {
     });
 
     $(".create-form").on("submit", function(event) {
-       
+      event.preventDefault();
          
         var newBurger = {
-            burger_name: $("newburger").val().trim(),
-            devoured: $("[newburger=devoured]:true").val().trim()
+            burger_name: $("#newburger").val().trim(),
+            devoured: 0
             
         };
         $.ajax("/api/burgers", { // POST to /api/burgers
           type: "POST",
           data: newBurger      // with newBurger data
         }).then(function(response) {
-          console.log(response)// <-- this will be the {id: result.insertId, message: "Success"} object. What is this for?
+          console.log(response)// <-- this will be the {id: result.insertId, message: "Success"}
           console.log("Added new burger");
           // Reload the page to get the updated burger list.
           location.reload();

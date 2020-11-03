@@ -18,16 +18,17 @@
             </table>
         </div>
 
-
-    <div class="mb-5 mx-4 id="options"" style = "font-weight: bold;"> 
+    
+    {{!-- <div class="mb-5 mx-4 id="options"" style = "font-weight: bold;">  --}}
             <h2>Devoured!</h2>
-       {{!-- <div class="col-md-5 col-right">  --}}
+      <div class="col-md-5 col-right">
             {{#each burgers}}
                 {{#if devoured}}
                     {{> burgers/burger-block devoured= true}}
                 {{/if}}
             {{/each}}        
-        </div>        
+        </div>    
+    </div>    
     </section>
 
 
@@ -46,3 +47,5 @@
         <button type="submit" style= "background-color: #FFD700;">Submit</button>
         </div>
     </form>  
+
+   
