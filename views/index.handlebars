@@ -1,27 +1,35 @@
 <h1 class="h1">Eat Da Burgers!</h1>
 
+
 <div class ="container">
     <div class ="row">
         {{!-- <img id = "image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXQok_K0uyW39Yni4mhWjYqnHzIu_777paPA&usqp=CAU" alt= "cheeseburger" style = "height:300px; border-radius: 15px; box-shadow: 0 0 10px 2px;"> --}}
     </div>
 <section class="row">
+    
         <div class="col-md-7 col-left">
+            <h2>Ready to Eat!</h2>
             <table>
                 {{#each burgers}}
                     {{#unless devoured}}
-                        {{> burgers/burger-block}}
+                        {{> burgers/burger-block devoured = false}}
                     {{/unless}}
                 {{/each}}
             </table>
         </div>
-        <div class="col-md-5 col-right">
+
+
+    <div class="mb-5 mx-4 id="options"" style = "font-weight: bold;"> 
+            <h2>Devoured!</h2>
+       {{!-- <div class="col-md-5 col-right">  --}}
             {{#each burgers}}
                 {{#if devoured}}
-                    <div>{{id}}. {{burger_name}}</div>
+                    {{> burgers/burger-block devoured= true}}
                 {{/if}}
             {{/each}}        
-        </div>          
+        </div>        
     </section>
+
 
 
 
@@ -32,8 +40,8 @@
 
     <h2>Add a Burger</h2>
    
-      <label for="newburg"></label>
-            <textarea id="newburg" name="burger-name" rows="2" cols="40" placeholder=""></textarea>
+      <label for="newburger"></label>
+        <textarea id="newburger" name="burger_name" rows="2" cols="40" placeholder=""></textarea>
         </div>
         <button type="submit" style= "background-color: #FFD700;">Submit</button>
         </div>

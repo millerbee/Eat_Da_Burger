@@ -66,3 +66,10 @@ li {
 	text-align: left;
 }
 
+#burger-ready {
+  background-color: #FFD700;
+}
+
+#text{
+  font-weight: bold;
+}
