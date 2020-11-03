@@ -18,15 +18,20 @@
             </table>
         </div>
 
+
     
-    {{!-- <div class="mb-5 mx-4 id="options"" style = "font-weight: bold;">  --}}
-            <h2>Devoured!</h2>
-      <div class="col-md-5 col-right">
+           
+      
+          
+          <div class="col-md-5 col-right">     
+               <h2>Devoured!</h2>
+               <table>      
             {{#each burgers}}
                 {{#if devoured}}
                     {{> burgers/burger-block devoured= true}}
                 {{/if}}
-            {{/each}}        
+            {{/each}}    
+            </table>
         </div>    
     </div>    
     </section>
