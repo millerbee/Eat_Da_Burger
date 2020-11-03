@@ -25,6 +25,7 @@ li {
   .form-group {
     margin-bottom: 5px;
     margin-top: 50px;
+  
    
   }
   
@@ -49,7 +50,7 @@ li {
     margin: auto;
     margin-left: 800px;
     padding-top: 75px;
-    
+   
   }
   
   .table-row{
@@ -75,3 +76,4 @@ li {
 #text{
   font-weight: bold;
 }
+

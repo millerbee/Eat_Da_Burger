@@ -55,7 +55,7 @@ var orm = {
     var queryString = "INSERT INTO " + table;
 
     queryString += " (";
-    queryString += str.charAt(0).toUpperCase().cols.toString();  //addec code to capitalize first letter of new burger
+    queryString += cols.toString();  
     queryString += ") ";
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
