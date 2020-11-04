@@ -11,7 +11,7 @@
   This app allows users to eat burgers and create burgers to eat.  The module introduced MVC design, ORM and express Handlebars.
 
 ## Table of Contents
-- [Description](#description)node
+- [Description](#description)
 - [Installation](#install)
 - [Usage](#usage)
 - [License](#license)
