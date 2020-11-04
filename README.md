@@ -1,10 +1,10 @@
 <h1>Eat Da Burger</h1>    
 
-  ![badge](https://https://img.shields.io/badge/-Express-blue)
+  ![badge](https://img.shields.io/badge/-Express-blue)
   ![badge](https://img.shields.io/badge/-node%20js-orange)
   ![badge](https://img.shields.io/badge/-Inquirer-green)
   ![badge](https://img.shields.io/badge/-Handlebars-yellowgreen)
-  ![badge](https://https://img.shields.io/badge/-MySQL-ff69b4)
+  ![badge](https://img.shields.io/badge/-MySQL-ff69b4)
 
   
 ## Description
